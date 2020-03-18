@@ -4264,7 +4264,7 @@ end
 
 if text == "بوت" then
 Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
-send(msg.chat_id_, msg.id_,"الرائع  ["..Namebot.."] يكول الو ")
+send(msg.chat_id_, msg.id_,"ءلو وياك ["..Namebot.."] ")
 end
 if text == "شسمك" then
 Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")

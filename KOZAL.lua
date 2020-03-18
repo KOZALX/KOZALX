@@ -4242,20 +4242,20 @@ database:set(bot_id.."KOZAL:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫 ┇ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."KOZAL:Name:Bot") or "ترند") then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
+if text == (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل") then
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
 local namebot = {
-"عمري فداك "..Namebot.. " كول حب ",
-"كول حبيبي ؟ اني "..Namebot,
-'ها حبي وياك مكتب ئلسيد .',
-'عٍ ـيِنيِ 🙁 ؟',
-'ها يروحي 😤💘',
-'ها يحلو كول',
-'عمري الحلو',
-'صاعد اتصال ويا الحب دقيقة وجيك 😘💘',
-'مشغول حالياً 🌚🌸',
-'لابسك لتلح',
-" هايروحي؟ "..Namebot,
+"يروحي فداك "..Namebot.. " اامرنيي😰 ",
+"كول ححبيببي انييي🙊 "..Namebot,
+'ها حبي وياك مكتب ئلسيد القييد .',
+'كلببيي 🙁 ',
+'ها يغووحي 💘',
+'يصصاكك كول',
+'عمري الوصخ',
+'داصيد زواحف وخرر🦎',
+'ااعذرنيي مشغول 🌚',
+'لحح  لحح',
+" هايعمر  "..Namebot,
 }
 name = math.random(#namebot)
 send(msg.chat_id_, msg.id_, namebot[name]) 
@@ -4263,11 +4263,11 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ")
 end
 if text == "شسمك" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
 send(msg.chat_id_, msg.id_,"اسمي  ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
@@ -5600,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات ترند \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات كوزل \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -5746,14 +5746,14 @@ Text = [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 📊┇ [Source Channel](https://t.me/KOZALTEAM)
 
-📋┇ [TshAkE Dev](https://t.me/KOZALTEAM)
+📋┇ [KOZAL Dev](https://t.me/KOZALTEAM)
 
 📁┇ [Source  Files](https://t.me/KOZALFIles)
 
 🌐┇ [DEV KOZAL](https://t.me/ttuna)
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📧┇ [TWS ](https://t.me/N8ibot)
+📧┇ [TWS KOZAL ](https://t.me/N8ibot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -6657,7 +6657,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
+local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
 if not database:get(bot_id.."KOZAL:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 

@@ -70,7 +70,7 @@ RunKOZALX:write([[
 #!/usr/bin/env bash
 cd $HOME/KOZALX
 token="]]..database:get(Server_KOZALX.."Token_KOZALX")..[["
-rm -fr KOZAL.lua
+rm -fr KOZALX.lua
 wget "https://raw.githubusercontent.com/KOZALX/KOZALX/master/KOZALX.lua"
 while(true) do
 rm -fr ../.telegram-cli

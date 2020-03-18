@@ -10,7 +10,7 @@ chmod +x ts
 get() {
 rm -fr KOZAL.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/KOZALX/KOZALX/master/KOZAL.lua"
+wget "https://raw.githubusercontent.com/KOZALX/KOZAL/master/KOZAL.lua"
 lua start.lua
 }
 installall(){

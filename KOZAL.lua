@@ -1,9 +1,9 @@
 --[[
- _     ___ _____   _    _     
-| | __/ _ \__  /  / \  | |    
-| |/ / | | |/ /  / _ \ | |    
-|   <| |_| / /_ / ___ \| |___ 
-|_|\_\\___/____/_/   \_\_____|
+‌‌‎ _____ ____  _   _ ____  
+|_   _|  _ \| \ | |  _ \ 
+  | | | |_) |  \| | | | |
+  | | |  _ <| |\  | |_| |
+  |_| |_| \_\_| \_|____/
 
 --]]
 database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
@@ -21,17 +21,17 @@ print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features fast and powerful
- _     ___ _____   _    _     
-| | __/ _ \__  /  / \  | |    
-| |/ / | | |/ /  / _ \ | |    
-|   <| |_| / /_ / ___ \| |___ 
-|_|\_\\___/____/_/   \_\_____|
-                                                                                                                                                                        
-تم تنصيب سورس كوزل بل كامل ✔️  
-                                                                        
->> CH > @KoZALtEAM
->> DEVELOPER > @CUUUUUU 
->> DEVELOPER > @TTUNA                     
+‌‌‎ ‌‌‎ _____ ____  _   _ ____  
+|_   _|  _ \| \ | |  _ \ 
+  | | | |_) |  \| | | | |
+  | | |  _ <| |\  | |_| |
+  |_| |_| \_\_| \_|____/
+_ __ _ __ _ __ _ __ _ 
+تم تنصيب سورس ترند بل كامل ✔️  
+                                                                                                                             
+>> CH > @KOZALTEAM
+>> CH > @KOZALX 
+>> DEVELOPER > @hHZzZ
 ]].."\27[m")
 
 io.popen("mkdir KOZAL_Files")
@@ -4242,8 +4242,8 @@ database:set(bot_id.."KOZAL:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫 ‡ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل") then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+if text == (database:get(bot_id.."KOZAL:Name:Bot") or "ترند") then
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
 local namebot = {
 "عمري فداك "..Namebot.. " كول حب ",
 "كول حبيبي ؟ اني "..Namebot,
@@ -4263,11 +4263,11 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
 send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ")
 end
 if text == "شسمك" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
 send(msg.chat_id_, msg.id_,"اسمي  ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
@@ -5600,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ‡ اهلا بك في متجر ملفات كوزل \n📮 ‡ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ‡ اهلا بك في متجر ملفات ترند \n📮 ‡ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ‡ تدل علامة (✔) الملف مفعل\n".."📌 ‡ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -6655,7 +6655,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
 if not database:get(bot_id.."KOZAL:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 

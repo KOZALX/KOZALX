@@ -71,10 +71,10 @@ RunKOZALX:write([[
 cd $HOME/KOZALX
 token="]]..database:get(Server_KOZALX.."Token_KOZALX")..[["
 rm -fr KOZAL.lua
-wget "https://raw.githubusercontent.com/KOZALX/KOZALC/master/KOZALX.lua"
+wget "https://raw.githubusercontent.com/KOZALX/KOZALX/master/KOZALX.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./KOZAL.lua -p PROFILE --bot=$token
+./tg -s ./KOZALX.lua -p PROFILE --bot=$token
 done
 ]])
 RunKOZALX:close()

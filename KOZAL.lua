@@ -1,5 +1,5 @@
 --[[
- _     ___ _____   _    _     
+‌‌‎ _     ___ _____   _    _     
 | | __/ _ \__  /  / \  | |    
 | |/ / | | |/ /  / _ \ | |    
 |   <| |_| / /_ / ___ \| |___ 
@@ -4242,20 +4242,20 @@ database:set(bot_id.."KOZAL:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫 ┇ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل") then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+if text == (database:get(bot_id.."KOZAL:Name:Bot") or "ترند") then
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
 local namebot = {
-"يروحي فداك "..Namebot.. " اامرنيي😰 ",
-"كول ححبيببي انييي🙊 "..Namebot,
-'ها حبي وياك مكتب ئلسيد القييد .',
-'كلببيي 🙁 ',
-'ها يغووحي 💘',
-'يصصاكك كول',
-'عمري الوصخ',
-'داصيد زواحف وخرر🦎',
-'ااعذرنيي مشغول 🌚',
-'لحح  لحح',
-" هايعمر  "..Namebot,
+"عمري فداك "..Namebot.. " كول حب ",
+"كول حبيبي ؟ اني "..Namebot,
+'ها حبي وياك مكتب ئلسيد .',
+'عٍ ـيِنيِ 🙁 ؟',
+'ها يروحي 😤💘',
+'ها يحلو كول',
+'عمري الحلو',
+'صاعد اتصال ويا الحب دقيقة وجيك 😘💘',
+'مشغول حالياً 🌚🌸',
+'لابسك لتلح',
+" هايروحي؟ "..Namebot,
 }
 name = math.random(#namebot)
 send(msg.chat_id_, msg.id_, namebot[name]) 
@@ -4263,12 +4263,12 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
-send(msg.chat_id_, msg.id_,"ءلو وياك ["..Namebot.."] ")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
+send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ")
 end
 if text == "شسمك" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
-send(msg.chat_id_, msg.id_,"ءلكيوت  ["..Namebot.."] ")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
+send(msg.chat_id_, msg.id_,"اسمي  ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
 if DevKOZAL(msg) then
@@ -4706,18 +4706,18 @@ end
 if text == 'تعين الايدي' and Owner(msg) then
 database:setex(bot_id.."KOZAL:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
-ᯓ ارسل كليشه الايدي الجديده ᯓ
-            ᯓ   يمكنك اضافه   ᯓ
-- #username > اسم المستخدم
-- #msgs > عدد رسائل المستخدم
-- #photos > عدد صور المستخدم
-- #id > ايدي المستخدم
-- #auto > تفاعل المستخدم
-- #stast > موقع المستخدم 
-- #edit > عدد السحكات
-- #game > المجوهرات
-- #AddMem > عدد الجهات
-- #Description > تعليق الصوره
+📮 ┇  ارسل الان النص
+📮 ┇  يمكنك اضافه :
+- `#username` > اسم المستخدم
+- `#msgs` > عدد رسائل المستخدم
+- `#photos` > عدد صور المستخدم
+- `#id` > ايدي المستخدم
+- `#auto` > تفاعل المستخدم
+- `#stast` > موقع المستخدم 
+- `#edit` > عدد السحكات
+- `#game` > المجوهرات
+- `#AddMem` > عدد الجهات
+- `#Description` > تعليق الصوره
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false  
@@ -4725,20 +4725,20 @@ end
 if text == 'حذف الايدي' or text == 'مسح الايدي' then
 if Owner(msg) then
 database:del(bot_id.."KOZAL:Klesh:Id:Bot"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, 'تم ازاله كليشه الايدي🧧')
+send(msg.chat_id_, msg.id_, '📌 ┇ تم ازالة كليشة الايدي ')
 end
 return false  
 end 
 
 if database:get(bot_id.."KOZAL:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) then 
 if text == 'الغاء' then 
-send(msg.chat_id_, msg.id_,"تم الغاء التعيين 🎫") 
+send(msg.chat_id_, msg.id_,"📫 ┇ تم الغاء تعين الايدي") 
 database:del(bot_id.."KOZAL:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
 database:del(bot_id.."KOZAL:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
 database:set(bot_id.."KOZAL:Klesh:Id:Bot"..msg.chat_id_,text:match("(.*)"))
-send(msg.chat_id_, msg.id_,'تم حفظ تعيين الايدي 💘')    
+send(msg.chat_id_, msg.id_,'📌 ┇ تم تعين الايدي')    
 end
 
 if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not database:get(bot_id..'KOZAL:Lock:ID:Bot'..msg.chat_id_) then
@@ -4786,10 +4786,10 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,get_id)
 else
-sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'ᯓ '..Description..'\nᯓ 𝗜𝗗 '..Id..'\nᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 '..UserName_User..'\nᯓ 𝗦𝗧𝗮𝗦𝗧 '..Status_Gps..'\nᯓ 𝗺𝗦𝗚𝗦 '..NumMsg..'\nᯓ 𝗚𝗮𝗺𝗘𝗦 ~⪼ '..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'🖼 ┇ '..Description..'\n🔘 ┇ ايديك -  '..Id..'\n📌 ┇ معرفـك -'..UserName_User..'\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك - '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games)
 end
 else
-send(msg.chat_id_, msg.id_,'𝐘𝐎𝐔 𝐃𝐎𝐍'𝐓 𝐇𝐀𝐕𝐄 𝐀 𝐏𝐈𝐂𝐓𝐔𝐑𝐄 🙁?'..'\n*ᯓ 𝗜𝗗  '..Id..'\nᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘* ['..UserName_User..']*\nᯓ 𝗦𝗧𝗮𝗦𝗧 '..Status_Gps..'\nᯓ 𝗺𝗦𝗚𝗦 '..NumMsg..'\nᯓ 𝗚𝗮𝗺𝗘𝗦 '..Num_Games..'*')
+send(msg.chat_id_, msg.id_,'🖼 ┇ ليس لديك صوره 🙁 ؟'..'\n*🔘 ┇ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك - '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games..'*') 
 end
 else
 if get_id then
@@ -4805,7 +4805,7 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..get_id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n*ᯓ 𝗜𝗗  '..Id..'\nᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘* ['..UserName_User..']*\nᯓ 𝗦𝗧𝗮𝗦𝗧 '..Status_Gps..'\nᯓ 𝗺𝗦𝗚𝗦 '..NumMsg..'\nᯓ 𝗚𝗮𝗺𝗘𝗦 '..Num_Games..'*')
+send(msg.chat_id_, msg.id_,'\n*🔘 ┇ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك -  '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games..'*')
 end
 end
 end,nil)   
@@ -5600,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات كوزل \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات ترند \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -6655,7 +6655,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "ترند")
 if not database:get(bot_id.."KOZAL:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 

@@ -5740,36 +5740,38 @@ send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-[🌐 ┇ !~ Tᖇᑎᗪ ~!](https://t.me/CC_C2)
- ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
- 
-[🦁 ┇  Source Channel](https://t.me/CC_C2)
+🔰 اهلا بك في سورس كوزال  🔰
 
-[🗂 ┇  Source files](https://t.me/KOZALTEAM)
-
-[📊 ┇ To install](https://t.me/CC_C2/110)
-
+🌐┇KoZal TEAM 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-[📨 ┇ To communicate](https://t.me/xzzbbot)
+📊┇ [Source Channel](https://t.me/KOZALTEAM)
+
+📋┇ [TshAkE Dev](https://t.me/KOZALTEAM)
+
+📁┇ [Source  Files](https://t.me/KOZALFIles)
+
+🌐┇ [DEV KOZAL](https://t.me/ttuna)
+ 
+ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+📧┇ [TWS ](https://t.me/N8ibot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'الاوامر'  then
 Text = [[
-📮 ┇ هناك {5} اوامر لعرضها
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🗑 ┇ م1 ~⪼ لعرض اوامر الحمايه
-📚 ┇ م2 ~⪼ لعرض اوامر الادمنيه
-🗓 ┇ م3 ~⪼ لعرض اوامر المدراء
-🎖 ┇ م4 ~⪼ لعرض اوامر المنشئين
-👤 ┇ م5 ~⪼ لعرض اوامر المطورين
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-[📊 ┇ To install](https://t.me/CC_C2)
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-[📨 ┇ To communicate](https://t.me/xzzbbot)
+• هناك  5 اوامر لعرضها ✅
+━━━━━━━◉━━━━━━━
+- م1 ~ لعرض اوامر الحمايه 🛠
+- م2 ~ لعرض اوامر الادمنيه 👨🏻‍🏭
+- م3 ~ لعرض اوامر المدراء 👨🏻‍💼
+- م4 ~ لعرض اوامر المنشئين 👨🏻‍🔧
+- م5 ~ لعرض اوامر المطورين 👨🏻‍💻
+━━━━━━━◉━━━━━━━
+🛠 CH: @KOZALTEAM
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
+
 
 if text == 'م1'  then
 Text = [[

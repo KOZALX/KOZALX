@@ -4706,8 +4706,8 @@ end
 if text == 'تعين الايدي' and Owner(msg) then
 database:setex(bot_id.."KOZAL:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
-ᯓ ارسل كليشه الايدي الجديده ᯓ
-            ᯓ   يمكنك اضافه   ᯓ 
+📮 ┇  ارسل الان النص
+📮 ┇  يمكنك اضافه :
 - `#username` > اسم المستخدم
 - `#msgs` > عدد رسائل المستخدم
 - `#photos` > عدد صور المستخدم
@@ -5740,9 +5740,9 @@ send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-🔰 اهلا بك في سورس كوزل  🔰
+🔰 اهلا بك في سورس كوزال  🔰
 
-🌐┇[KoZal TEAM](https://t.me/KOZALTEAM)
+🌐┇ [KoZal TEAM](https://t.me/KOZALTEAM)
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 📊┇ [Source Channel](https://t.me/KOZALTEAM)
 
@@ -5751,6 +5751,7 @@ Text = [[
 📁┇ [Source  Files](https://t.me/KOZALFIles)
 
 🌐┇ [DEV KOZAL](https://t.me/ttuna)
+ 
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 📧┇ [TWS KOZAL ](https://t.me/N8ibot)
 ]]

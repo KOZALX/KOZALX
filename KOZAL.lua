@@ -27,7 +27,7 @@ print("\27[34m"..[[
 |   <| |_| / /_ / ___ \| |___ 
 |_|\_\\___/____/_/   \_\_____|
                                                                                                                                                                          
-تم تنصيب سورس كوزل بل كامل ✔️  
+تم تنصيب سورس كوزال بل كامل ✔️  
                                                                                                                              
 >> CH > @KoZALtEAM
 >> DEVELOPER > @CUUUUUU 
@@ -4242,8 +4242,8 @@ database:set(bot_id.."KOZAL:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫 ┇ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل") then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+if text == (database:get(bot_id.."KOZAL:Name:Bot") or "كوزال") then
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزال")
 local namebot = {
 "يروحي فداك "..Namebot.. " اامرنيي😰 ",
 "كول ححبيببي انييي🙊 "..Namebot,
@@ -4263,11 +4263,11 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزال")
 send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] ")
 end
 if text == "شسمك" then
-Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزال")
 send(msg.chat_id_, msg.id_,"ءلكيوت ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
@@ -5229,7 +5229,7 @@ name = string.gsub(name,"شهر","امشي__ولا تعبر نهر")
 name = string.gsub(name,"شكه","يامن تعب يامن__يا من على الحاضر لكة")
 name = string.gsub(name,"القرد","__بعين امه غزال")
 name = string.gsub(name,"يكحله","اجه___عماها")
-send(msg.chat_id_, msg.id_,"?? ┇ اسرع واحد يكمل المثل ~ {"..name.."}")
+send(msg.chat_id_, msg.id_,"🔰 ┇ اسرع واحد يكمل المثل ~ {"..name.."}")
 return false
 end
 end
@@ -5600,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات كوزل \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات كوزال \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -5740,7 +5740,7 @@ send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-🔰 اهلا بك في سورس كوزل  🔰
+🔰 اهلا بك في سورس كوزال  🔰
 
 🌐┇ [KoZal TEAM](https://t.me/KOZALTEAM)
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -6657,7 +6657,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
+local Name_Bot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزال")
 if not database:get(bot_id.."KOZAL:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 

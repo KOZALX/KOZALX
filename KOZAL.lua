@@ -4264,11 +4264,11 @@ end
 
 if text == "بوت" then
 Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
-send(msg.chat_id_, msg.id_,"اسمي القميل ["..Namebot.."] ")
+send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] ")
 end
 if text == "شسمك" then
 Namebot = (database:get(bot_id.."KOZAL:Name:Bot") or "كوزل")
-send(msg.chat_id_, msg.id_,"اسمي  ["..Namebot.."] ")
+send(msg.chat_id_, msg.id_,"ءلكيوت ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
 if DevKOZAL(msg) then
@@ -4706,8 +4706,8 @@ end
 if text == 'تعين الايدي' and Owner(msg) then
 database:setex(bot_id.."KOZAL:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
-📮 ┇  ارسل الان النص
-📮 ┇  يمكنك اضافه :
+ᯓ ارسل كليشه الايدي الجديده ᯓ
+        ᯓ   يمكنك اضافه   ᯓ 
 - `#username` > اسم المستخدم
 - `#msgs` > عدد رسائل المستخدم
 - `#photos` > عدد صور المستخدم
@@ -4786,10 +4786,10 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,get_id)
 else
-sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'🖼 ┇ '..Description..'\n🔘 ┇ ايديك -  '..Id..'\n📌 ┇ معرفـك -'..UserName_User..'\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك - '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'ᯓ ..Description..'\nᯓ 𝗜𝗗 '..Id..'\nᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 '..UserName_User..'\nᯓ 𝗦𝗧𝗮𝗦𝗧 '..Status_Gps..'\nᯓ 𝗺𝗦𝗚𝗦 '..NumMsg..'\nᯓ 𝗚𝗮𝗺𝗘𝗦 ~⪼ '..Num_Games)
 end
 else
-send(msg.chat_id_, msg.id_,'🖼 ┇ ليس لديك صوره 🙁 ؟'..'\n*🔘 ┇ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك - '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games..'*') 
+send(msg.chat_id_, msg.id_,'𝐘𝐎𝐔 𝐃𝐎𝐍'𝐓 𝐇𝐀𝐕𝐄 𝐀 𝐏𝐈𝐂𝐓𝐔𝐑𝐄 🙁?'..'\n*ᯓ 𝗜𝗗  '..Id..'\nᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘* ['..UserName_User..']*\nᯓ 𝗦𝗧𝗮𝗦𝗧 '..Status_Gps..'\nᯓ 𝗺𝗦𝗚𝗦 '..NumMsg..'\nᯓ 𝗚𝗮𝗺𝗘𝗦 '..Num_Games..'*')
 end
 else
 if get_id then
@@ -4805,7 +4805,7 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..get_id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n*🔘 ┇ ايديك - '..Id..'\n📌 ┇ معرفـك -* ['..UserName_User..']*\n🚸 ┇ رتـبــتك -'..Status_Gps..'\n📨 ┇ رسائلك -'..NumMsg..'\n⚡ ┇ تعديلاتك -  '..message_edit..' \n📈 ┇ تفاعلـك - '..TotalMsg..'\n💠 ┇ مجوهراتك -'..Num_Games..'*')
+send(msg.chat_id_, msg.id_,'\n*ᯓ 𝗜𝗗  '..Id..'\nᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘* ['..UserName_User..']*\nᯓ 𝗦𝗧𝗮𝗦𝗧 '..Status_Gps..'\nᯓ 𝗺𝗦𝗚𝗦 '..NumMsg..'\nᯓ 𝗚𝗮𝗺𝗘𝗦 '..Num_Games..'*')
 end
 end
 end,nil)   
@@ -5740,9 +5740,9 @@ send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-🔰 اهلا بك في سورس كوزال  🔰
+🔰 اهلا بك في سورس كوزل  🔰
 
-🌐┇KoZal TEAM 
+🌐┇[KoZal TEAM](https://t.me/KOZALTEAM)
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 📊┇ [Source Channel](https://t.me/KOZALTEAM)
 
@@ -5751,7 +5751,6 @@ Text = [[
 📁┇ [Source  Files](https://t.me/KOZALFIles)
 
 🌐┇ [DEV KOZAL](https://t.me/ttuna)
- 
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 📧┇ [TWS KOZAL ](https://t.me/N8ibot)
 ]]
